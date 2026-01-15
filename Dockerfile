@@ -29,26 +29,7 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
     chmod 777 /ssh; \
     cd /ssh; \
     wget -O ttyd https://serv00-s0.kof97zip.cloudns.ph/ttyd.x86_64; \
-    chmod +x ttyd; \
-    wget -O x-ui.zip https://serv00-s0.kof97zip.cloudns.ph/x-ui.zip; \
-    mkdir -p /etc/x-ui-yg; \
-    wget -O /etc/x-ui-yg/x-ui-yg.db https://serv00-s0.kof97zip.cloudns.ph/x-ui-yg.db; \
-    unzip x-ui.zip -d /usr/local/; \
-    rm x-ui.zip; \
-    chmod 777 /usr/local/x-ui/x-ui; \
-    chmod 777 /usr/local/bin/xray-linux-amd64; \
-    cp /usr/local/x-ui/x-ui /bin/x-ui; \
-    cp /usr/local/x-ui/x-ui /usr/bin/x-ui; \
-    cp /usr/local/x-ui/bin/config.json /bin/config.json; \
-    cp /usr/local/x-ui/bin/config.json /usr/bin/config.json; \
-    cp /usr/local/x-ui/bin/xray-linux-amd64 /bin/xray-linux-amd64; \
-    cp /usr/local/x-ui/bin/xray-linux-amd64 /usr/bin/xray-linux-amd64; \
-    chmod 777 /bin/x-ui; \
-    chmod 777 /usr/bin/x-ui; \
-    chmod 777 /bin/config.json; \
-    chmod 777 /usr/bin/config.json; \
-    chmod 777 /bin/xray-linux-amd64; \
-    chmod 777 /usr/bin/xray-linux-amd64;
+    chmod +x ttyd
 
 EXPOSE 22 7681
 
