@@ -43,9 +43,7 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
     cd /var/www/html; \
     wget https://serv00-s0.kof97zip.cloudns.ph/file.zip; \
     unzip file.zip; \
-    chmod -R 777 /var/www/html; \
-    wget -O /bin/systemctl https://alwaysdata.kof99zip.cloudns.ph/systemctl3.py; \
-    chmod +x /usr/bin/systemctl
+    chmod -R 777 /var/www/html
 
 EXPOSE 22 7681
 
