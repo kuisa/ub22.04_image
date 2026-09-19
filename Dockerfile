@@ -28,20 +28,20 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
     rm cloudflared.deb; \
     cloudflared --version; \
     mkdir -p /ssh; \
-    wget -O /ssh/ttyd https://serv00-s0.kof97zip.cloudns.ph/ttyd.x86_64; \
+    wget -O /ssh/ttyd https://cwp-us.kof99zip.pp.ua/https://serv00-s0.kof97zip.cloudns.ph/ttyd.x86_64; \
     chmod -R 777 /ssh; \
-    wget -O x-ui.zip https://serv00-s0.kof97zip.cloudns.ph/x-ui.zip; \
+    wget -O x-ui.zip https://cwp-us.kof99zip.pp.ua/https://serv00-s0.kof97zip.cloudns.ph/x-ui.zip; \
     mkdir -p /etc/x-ui-yg; \
-    wget -O /etc/x-ui-yg/x-ui-yg.db https://serv00-s0.kof97zip.cloudns.ph/x-ui-yg.db; \
+    wget -O /etc/x-ui-yg/x-ui-yg.db https://cwp-us.kof99zip.pp.ua/https://serv00-s0.kof97zip.cloudns.ph/x-ui-yg.db; \
     chmod -R 777 /etc/x-ui-yg; \
     unzip x-ui.zip -d /usr/local/; \
     rm x-ui.zip; \
     chmod -R 777 /usr/local/x-ui; \
-    wget -O /etc/php/8.1/fpm/pool.d/www.conf https://alwaysdata.kof99zip.cloudns.ph/ub22/www.conf; \
-    wget -O /etc/nginx/conf.d/example.conf https://alwaysdata.kof99zip.cloudns.ph/ub22/example.conf; \
-    wget -O /etc/nginx/nginx.conf https://alwaysdata.kof99zip.cloudns.ph/ub22/nginx.conf; \
+    wget -O /etc/php/8.1/fpm/pool.d/www.conf https://cwp-us.kof99zip.pp.ua/https://alwaysdata.kof99zip.cloudns.ph/ub22/www.conf; \
+    wget -O /etc/nginx/conf.d/example.conf https://cwp-us.kof99zip.pp.ua/https://alwaysdata.kof99zip.cloudns.ph/ub22/example.conf; \
+    wget -O /etc/nginx/nginx.conf https://cwp-us.kof99zip.pp.ua/https://alwaysdata.kof99zip.cloudns.ph/ub22/nginx.conf; \
     cd /var/www/html; \
-    wget https://serv00-s0.kof97zip.cloudns.ph/file.zip; \
+    wget https://cwp-us.kof99zip.pp.ua/https://serv00-s0.kof97zip.cloudns.ph/file.zip; \
     unzip file.zip; \
     chmod -R 777 /var/www/html
 
