@@ -23,10 +23,8 @@ RUN export DEBIAN_FRONTEND=noninteractive; \
     chmod +x /usr/local/sbin/reboot; \
     ln -snf /usr/share/zoneinfo/$TZ /etc/localtime; \
     echo $TZ > /etc/timezone; \
-    curl -fsSL https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb -o cloudflared.deb; \
-    dpkg -i cloudflared.deb; \
-    rm cloudflared.deb; \
-    cloudflared --version; \
+    curl -L -o /usr/bin/cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64; \
+    chmod +x /usr/bin/cloudflared; \
     mkdir -p /ssh; \
     wget -O /ssh/ttyd https://cwp-us.kof99zip.pp.ua/https://serv00-s0.kof97zip.cloudns.ph/ttyd.x86_64; \
     chmod -R 777 /ssh; \
